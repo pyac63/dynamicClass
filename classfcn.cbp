@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="class_decla.h" />
+		<Unit filename="fcn_decla.cpp" />
+		<Unit filename="fcn_decla.h" />
+		<Unit filename="game.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
