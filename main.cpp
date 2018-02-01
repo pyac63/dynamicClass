@@ -7,11 +7,12 @@ class Person
 {
 private:
     string m_name;
-    int m_age;
+    int m_hp;
+    int m_str;
 
 public:
     Person() {};
-    Person(string x, int y) : m_name(x), m_age(y)
+    Person(string x, int y, int z) : m_name(x), m_hp(y), m_str(z)
     {
 
     }
@@ -20,24 +21,34 @@ public:
     {
         m_name = x;
     }
-    void setAge (int x)
+    void setHp (int x)
     {
-        m_age = x;
+        m_hp = x;
+    }
+
+    void setStr (int x)
+    {
+        m_str = x;
     }
 
     string getName() const
     {
         return m_name;
     }
-    int getAge() const
+    int getHp() const
     {
-        return m_age;
+        return m_hp;
+    }
+
+    int getStr() const
+    {
+        return m_str;
     }
 };
 
-Person* createPerson(string x, int y)
+Person* createPerson(string x, int y, int z)
 {
-    return new Person(x, y);
+    return new Person(x, y, z);
 }
 
 string enterName()
@@ -48,36 +59,37 @@ string enterName()
     return name;
 }
 
-int enterAge()
+int enterHp()
 {
-    cout << "Enter your age: \n";
-    int age;
-    cin >> age;
-    return age;
+    cout << "Enter your Hp: \n";
+    int hp;
+    cin >> hp;
+    return hp;
+}
+
+int enterStr()
+{
+    cout << "Enter your Hp: \n";
+    int str;
+    cin >> str;
+    return str;
 }
 
 void print (const Person &test)
 {
     cout << test.getName() << '\n';
-    cout << test.getAge() << '\n';
+    cout << test.getHp() << '\n';
+    cout << test.getStr() << '\n';
 }
 
-void changeClassAge(Person &test)
-{
-    cout << "Enter new age: \n";
-    int age;
-    cin >> age;
-    test.setAge(age);
-}
 
 int main()
 {
     cout << "Hello world!" << endl;
-    int x {enterAge()};
-    string y {enterName()};
-    Person *antoine = createPerson(y, x);
-    print(*antoine);
-    changeClassAge(*antoine);
+    string x {enterName()};
+    int y {enterHp()};
+    int z {enterStr()};
+    Person *antoine = createPerson(x, y, z);
     print(*antoine);
 
     delete antoine;
