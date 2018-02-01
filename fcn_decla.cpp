@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <random>
+#include <ctime>
 #include "class_decla.h"
 #include "fcn_decla.h"
 
@@ -51,3 +53,10 @@ void print (const Person &test)
     cout << test.getCa() << '\n';
 }
 
+int getRandomNumber(int min, int max)
+{
+	// Note: Due to a bug in the Code::Blocks compiler, if using Code::Blocks on Windows, delete the two lines above and uncomment this line:
+	static mt19937 mersenne(static_cast<unsigned int>(time(0))); // initialize our mersenne twister with a random seed
+	static const double fraction = 1.0 / (static_cast<double>(mersenne.max()) + 1.0);
+	return min + static_cast<int>((max - min + 1) * (mersenne() * fraction));
+}
