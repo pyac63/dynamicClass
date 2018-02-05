@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <random>
+#include <ctime>
 #include "class_decla.h"
 #include "fcn_decla.h"
 

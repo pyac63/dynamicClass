@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include <random>
+#include <ctime>
+
 #include "class_decla.h"
 #include "fcn_decla.h"
 
@@ -15,6 +18,8 @@ bool game()
     print(*antoine);
     Person *monster = createPerson("Troll", 20, 6, 14);
     print(*monster);
+    int roll {getRandomNumber(1, 20)};
+    cout << roll << '\n';
 
     //while ()
     delete antoine;
