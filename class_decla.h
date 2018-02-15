@@ -5,6 +5,8 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 

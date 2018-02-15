@@ -2,6 +2,8 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <chrono>
+#include <thread>
 #include "class_decla.h"
 #include "fcn_decla.h"
 

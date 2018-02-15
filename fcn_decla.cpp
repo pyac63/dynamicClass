@@ -2,6 +2,8 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <chrono>
+#include <thread>
 #include "class_decla.h"
 #include "fcn_decla.h"
 
@@ -59,4 +61,29 @@ int getRandomNumber(int min, int max)
 	static mt19937 mersenne(static_cast<unsigned int>(time(0))); // initialize our mersenne twister with a random seed
 	static const double fraction = 1.0 / (static_cast<double>(mersenne.max()) + 1.0);
 	return min + static_cast<int>((max - min + 1) * (mersenne() * fraction));
+}
+
+int rollD20 ()
+{
+    using namespace std::this_thread;
+    using namespace std::chrono;
+
+    char validate;
+    do
+    {
+        cout << "Enter (r) to throw the dice!\n";
+        cin >> validate;
+    }
+    while (validate != 'r');
+    int result = getRandomNumber(1, 20);
+    sleep_for(seconds(1));
+    cout << ".\n";
+    sleep_for(seconds(1));
+    cout << ".\n";
+    sleep_for(seconds(1));
+    cout << ".\n";
+    sleep_for(seconds(1));
+    cout << "You rolled a " << result << " .\n";
+
+    return result;
 }

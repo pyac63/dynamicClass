@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1518691960 source:c:\antoine\code\classfcn\fcn_decla.cpp
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+	"fcn_decla.h"
+
+1518691381 c:\antoine\code\classfcn\class_decla.h
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+
+1518691380 c:\antoine\code\classfcn\fcn_decla.h
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+

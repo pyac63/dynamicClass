@@ -6,6 +6,8 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <chrono>
+#include <thread>
 #include "class_decla.h"
 
 using namespace std;
@@ -18,6 +20,7 @@ int enterStr();
 int enterCa();
 void print (const Person &test);
 int getRandomNumber(int min, int max);
+int rollD20();
 
 
 #endif // FCN_DECLA_H
