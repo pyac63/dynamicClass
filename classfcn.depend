@@ -26,3 +26,50 @@
 	<thread>
 	"class_decla.h"
 
+1518815323 source:c:\users\aaa\documents\rainmeter\skins\droptop\folders\customfolder4\c++\2\dynamicclass\fcn_decla.cpp
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+	"fcn_decla.h"
+
+1518813116 c:\users\aaa\documents\rainmeter\skins\droptop\folders\customfolder4\c++\2\dynamicclass\class_decla.h
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+
+1518815256 c:\users\aaa\documents\rainmeter\skins\droptop\folders\customfolder4\c++\2\dynamicclass\fcn_decla.h
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+
+1518815791 source:c:\users\aaa\documents\rainmeter\skins\droptop\folders\customfolder4\c++\2\dynamicclass\game.cpp
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+	"fcn_decla.h"
+
+1518814842 source:c:\users\aaa\documents\rainmeter\skins\droptop\folders\customfolder4\c++\2\dynamicclass\main.cpp
+	<iostream>
+	<string>
+	<random>
+	<ctime>
+	<chrono>
+	<thread>
+	"class_decla.h"
+	"fcn_decla.h"
+

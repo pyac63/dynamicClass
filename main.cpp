@@ -14,7 +14,12 @@ using namespace std;
 int main()
 {
     cout << "Hello world!" << endl;
-    game();
+    bool playerAlive = true;
+    while (playerAlive)
+    {
+        playerAlive = game();
+    }
+
 
     return 0;
 }

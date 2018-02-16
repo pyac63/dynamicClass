@@ -20,7 +20,8 @@ int enterStr();
 int enterCa();
 void print (const Person &test);
 int getRandomNumber(int min, int max);
-int rollD20();
+int rollD20(char character);
+bool checkCrit (int x);
 
 
 #endif // FCN_DECLA_H

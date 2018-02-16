@@ -63,27 +63,48 @@ int getRandomNumber(int min, int max)
 	return min + static_cast<int>((max - min + 1) * (mersenne() * fraction));
 }
 
-int rollD20 ()
+bool checkCrit(int x)
+{
+    if (x == 20)
+        return true;
+    else
+        return false;
+}
+int rollD20 (char character)
 {
     using namespace std::this_thread;
     using namespace std::chrono;
 
-    char validate;
-    do
-    {
-        cout << "Enter (r) to throw the dice!\n";
-        cin >> validate;
-    }
-    while (validate != 'r');
     int result = getRandomNumber(1, 20);
-    sleep_for(seconds(1));
-    cout << ".\n";
-    sleep_for(seconds(1));
-    cout << ".\n";
-    sleep_for(seconds(1));
-    cout << ".\n";
-    sleep_for(seconds(1));
-    cout << "You rolled a " << result << " .\n";
+
+    if (character == 'p')
+    {
+        char validate;
+        do
+        {
+            cout << "Enter (r) to throw the dice!\n";
+            cin >> validate;
+        }
+        while (validate != 'r');
+
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
+        cout << "You rolled a " << result << ".\n";
+
+    }
+    else
+    {
+
+        cout << "Enemy rolled a " << result << ".\n";
+
+    }
 
     return result;
+
+
 }
