@@ -70,6 +70,7 @@ bool checkCrit(int x)
     else
         return false;
 }
+
 int rollD20 (char character)
 {
     using namespace std::this_thread;
@@ -99,6 +100,13 @@ int rollD20 (char character)
     }
     else
     {
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
+        cout << ".\n";
+        sleep_for(seconds(1));
 
         cout << "Enemy rolled a " << result << ".\n";
 
